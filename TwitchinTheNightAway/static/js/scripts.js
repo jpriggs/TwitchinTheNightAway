@@ -2,26 +2,27 @@ $(document).ready(function() {
 
   changeButtonSelection("all-button");
   getStreamerData();
+  $("#result-list").show();
 
   $("#all-button, #online-button, #offline-button").on("click", function() {
     var currentButton = $(this).attr("id");
     changeButtonSelection(currentButton);
 
     if (this.id == "all-button") {
-      $("#result-list").delay(700).fadeOut(300, function() {
+      $("#result-list").delay(500).fadeOut(250, function() {
         $(this).empty();
       });
       getStreamerData();
     }
     else if (this.id == "online-button") {
-      $(".offline").delay(700).fadeOut(300);
-      $(".online").delay(700).fadeOut(300);
-      $(".online").delay(700).fadeIn(300);
+      $(".offline").delay(500).fadeOut(250);
+      $(".online").delay(500).fadeOut(250);
+      $(".online").delay(500).fadeIn(500);
     }
     else if (this.id == "offline-button") {
-      $(".online").delay(700).fadeOut(300);
-      $(".offline").delay(700).fadeOut(300);
-      $(".offline").delay(700).fadeIn(300);
+      $(".online").delay(500).fadeOut(250);
+      $(".offline").delay(500).fadeOut(250);
+      $(".offline").delay(500).fadeIn(500);
     }
   });
   $("#all-button-mobile, #online-button-mobile, #offline-button-mobile").on("click", function() {
@@ -96,12 +97,8 @@ function fetchApiData(channel) {
         currentWatching + '</span></i></div><div><i class="fa fa-eye views" title="Total Views"><span>' +
         totalViews + '</span></i></div><div>' +
         mature + '<span>' + partner + '</span></div></div></div></li>';
-      $("#result-list").hide().fadeIn(function() {
-        $(this).append(html);
-      });
-      $("#result-list-mobile").hide().fadeIn(function() {
-        $(this).append(html);
-      });
+      $("#result-list").hide().append(html).fadeIn();
+      $("#result-list-mobile").hide().append(html).fadeIn();
     });
   });
 }
