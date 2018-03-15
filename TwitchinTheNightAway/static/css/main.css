@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css?family=Oregano');
+@import url('https://fonts.googleapis.com/css?family=Life+Savers');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.main-body {
+  background-color: #4b307b;
+}
+.title {
+  font-family: 'Fontdiner Swanky', cursive;
+  color: #FEFEFA;
+  -webkit-animation: pulse-title 1.5s ease-in-out infinite alternate;
+  -moz-animation: pulse-title 1.5s ease-in-out infinite alternate;
+  animation: pulse-title 1.5s ease-in-out infinite alternate;
+  text-align: center;
+  margin-bottom: -140px;
+  position: relative;
+  z-index: 2;
+}
+.tv-antenna {
+  width: 5px;
+  height: 120px;
+  background-color: black;
+  margin-top: -90px;
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 0;
+}
+.antenna-left {
+  transform: rotate(-30deg);
+  float: left;
+  margin-left: 40%;
+  position: relative;
+  z-index: 0;
+}
+.antenna-right {
+  transform: rotate(30deg);
+  float: right;
+  margin-right: 40%;
+  position: relative;
+  z-index: 0;
+}
+.antenna-base {
+  height: 80px;
+  width: 33%;
+  background-color: black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px;
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+.outer-stream-box {
+  background-color: #8B4513;
+  background: linear-gradient(45deg, #663300 12%, transparent 0, transparent 88%, #663300 0),
+    linear-gradient(135deg, transparent 37%, #331a00 0, #331a00 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #1a0d00 0, #1a0d00 63%, transparent 0) #4d2600;
+    background-size: 25px 25px;
+  width: 90%;
+  -webkit-animation: pulse-tv 1.5s ease-in-out infinite alternate;
+  -moz-animation: pulse-tv 1.5s ease-in-out infinite alternate;
+  animation: pulse-tv 1.5s ease-in-out infinite alternate;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.speaker-object {
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  border: 3px solid silver;
+  border-radius: 70px;
+  box-shadow: inset 3px 3px 15px 4px black, 5px 5px 10px black;
+}
+.tv-label {
+  font-family: 'Sacramento', cursive;
+  color: silver;
+  text-align: center;
+  text-shadow: 2px 2px 20px black;
+}
+.tv-label a {
+  color: silver;
+  text-decoration: none;
+}
+.tv-button {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: black;
+  border: 2px solid silver;
+  box-shadow: inset 2px 2px 10px 2px black, 5px 5px 10px black !important;
+  margin-left: 5px !important;
+  padding-left: 5px !important;
+}
+.tv-button-selected {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: white;
+  background-color: #228DFF;
+  border: 2px solid silver;
+  box-shadow: inset 2px 2px 10px 2px black, 5px 5px 10px black !important;
+  margin-left: 5px !important;
+  padding-left: 5px !important;
+  text-shadow: 1px 1px 10px white !important;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #A7DFE6, 1px 1px 20px 2px white !important;
+}
+.tv-button:hover, .tv-button:focus {
+  color: white;
+  outline: none !important;
+  border: 2px solid silver !important;
+}
+.tv-button:active {
+  text-shadow: 1px 1px 10px white !important;
+  border: 2px solid silver !important;
+}
+#all-button {
+  background-color: #1909B1;
+  border-radius: 25px 0 0 25px;
+}
+#all-button:hover, #all-button:focus {
+  background-color: #228DFF;
+}
+#all-button:active {
+  background-color: #228DFF;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #A7DFE6, 1px 1px 20px 2px white !important;
+}
+.all-button-selected {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: white;
+  background-color: #228DFF !important;
+  border: 2px solid silver;
+  box-shadow: inset 2px 2px 10px 2px black, 5px 5px 10px black !important;
+  margin-left: 5px !important;
+  padding-left: 5px !important;
+  text-shadow: 1px 1px 10px white !important;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #A7DFE6, 1px 1px 20px 2px white !important;
+}
+#online-button {
+  background-color: #006000;
+  padding-left: 10px !important;
+}
+#online-button:hover, #online-button:focus {
+  background-color: #33CC33;
+}
+#online-button:active {
+  background-color: #33CC33;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #BEFABE, 1px 1px 20px 2px white !important;
+}
+.online-button-selected {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: white;
+  background-color: #33CC33 !important;
+  border: 2px solid silver;
+  box-shadow: inset 2px 2px 10px 2px black, 5px 5px 10px black !important;
+  margin-left: 5px !important;
+  padding-left: 5px !important;
+  text-shadow: 1px 1px 10px white !important;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #BEFABE, 1px 1px 20px 2px white !important;
+}
+#offline-button {
+  background-color: #BF0000;
+  border-radius: 0 25px 25px 0;
+}
+#offline-button:hover, #offline-button:focus {
+  background-color: #FF4D4D;
+}
+#offline-button:active {
+  background-color: #FF4D4D;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #FFD3CF, 1px 1px 20px 2px white !important;
+}
+.offline-button-selected {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: white;
+  background-color: #FF4D4D !important;
+  border: 2px solid silver;
+  box-shadow: inset 2px 2px 10px 2px black, 5px 5px 10px black !important;
+  margin-left: 5px !important;
+  padding-left: 5px !important;
+  text-shadow: 1px 1px 10px white !important;
+  box-shadow: inset 1px 1px 5px 3px #304042, inset 1px 1px 30px 5px #FFD3CF, 1px 1px 20px 2px white !important;
+}
+.stream-list-box {
+  background-color: #815FC0;
+  width: 90%;
+  box-shadow: inset 1px 1px 10px 3px black, inset 1px 1px 20px 3px white, 1px 1px 40px 5px #815FC0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 30px;
+  border-radius: 60px;
+  overflow: auto;
+}
+#result-list {
+  padding: 0;
+  list-style-type: none;
+}
+.tv-control-bar {
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stream-item {
+  border-radius: 35px;
+  box-shadow: 3px 3px 20px black;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: -15px;
+  cursor: pointer;
+}
+.online {
+  background-color: #BEFABE !important;
+}
+.offline {
+  background-color: #F49199 !important;
+}
+.logo {
+  -webkit-mask-image: linear-gradient(270deg, transparent 20px, white 20px), linear-gradient(135deg, white 10px, transparent 10px), linear-gradient(45deg, white 10px, transparent 10px);
+  -webkit-mask-position: right top;
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-size: 100% 100%, 20px 20px, 20px 20px;
+  height: 150px;
+  width: auto;
+  border-radius: 35px 0 0 35px;
+  margin-left: -15px;
+}
+.streamer-name {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 42px;
+  font-weight: bold;
+  color: black !important;
+  text-decoration: none !important;
+  display:block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto;
+}
+.current-status {
+  font-family: 'Oregano', cursive;
+  font-size: 38px;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto;
+}
+.description {
+  font-family: 'Life Savers', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: auto;
+}
+i.viewers {
+  font-size: 28px;
+  color: red;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.viewers span {
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  margin-left: 10px;
+}
+i.views {
+  font-size: 28px;
+  color: gray !important;
+}
+.views span {
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  margin-left: 10px;
+}
+i.mature {
+  font-size: 36px;
+  color: #83268E;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+i.partner {
+  font-size: 36px;
+  color: #05830B;
+  margin-top: 10px;
+}
+.tv-leg {
+  background-color: black;
+  height: 70px;
+  width: 90px;
+  position: absolute;
+  z-index: 1;
+}
+.left-leg {
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+}
+.right-leg {
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  margin-left: -40px;
+}
+.footer {
+  font-family: 'Megrim', cursive;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  font-family: 'Sacramento', cursive;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/*Animations*/
+@keyframes pulse-title {
+from {
+    text-shadow: -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 12px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 24px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 36px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 24px yellow;
+  }
+  to {
+    text-shadow: -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 4px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 8px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 12px yellow, -1px -1px 0px #483DBD, 1px -1px 0px #483DBD, -1px 1px 0px #483DBD, 1px 1px 0px #483DBD, 3px 3px 8px yellow;
+  }
+}
+@keyframes pulse-tv {
+  from {
+    box-shadow: 1px 1px 20px 4px #815FC0, 1px 1px 20px 8px #815FC0, 1px 1px 20px 12px #815FC0, 1px 1px 20px 8px #815FC0;
+  }
+  to {
+    box-shadow: 1px 1px 20px 1px #815FC0, 1px 1px 20px 2px #815FC0, 1px 1px 20px 3px #815FC0, 1px 1px 20px 2px #815FC0;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  .title {
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: -85px;
+  }
+  .outer-stream-box {
+    height: 725px;
+  }
+  .tv-control-bar {
+    height: 150px;
+    margin-left: 150px;
+  }
+  .speaker-object {
+    height: 140px;
+    width: 300px;
+    margin-left: -150px;
+  }
+  .tv-label {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: -40px;
+  }
+  .tv-button {
+    font-size: 42px !important;
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+  }
+  .tv-button-selected {
+    font-size: 42px !important;
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+  }
+  .stream-list-box {
+    height: 525px;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 66px;
+    margin-top: 10px;
+  }
+  .outer-stream-box {
+    height: 625px;
+  }
+  .tv-control-bar {
+    height: 125px;
+    margin-left: 110px;
+  }
+  .speaker-object {
+    height: 115px;
+    width: 250px;
+    margin-left: -110px;
+  }
+  .tv-label {
+    font-size: 66px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  .tv-button {
+    font-size: 36px !important;
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+  }
+  .tv-button-selected {
+    font-size: 36px !important;
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+  }
+  .stream-list-box {
+    height: 450px;
+  }
+  .stream-item {
+    height: 125px;
+  }
+  .logo {
+    height: 125px;
+  }
+  .streamer-name {
+    font-size: 38px;
+    margin-left: 30px;
+  }
+  .current-status {
+    font-size: 36px;
+    margin-left: 30px;
+  }
+  .description {
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 30px;
+  }
+  i.viewers {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  i.views {
+    font-size: 26px;
+  }
+  i.mature {
+    font-size: 30px;
+  }
+  i.partner {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 52px;
+    margin-top: 30px;
+  }
+  .outer-stream-box {
+    height: 585px;
+  }
+  .tv-control-bar {
+    height: 110px;
+    margin-left: 50px;
+  }
+  .speaker-object {
+    height: 100px;
+    width: 200px;
+    margin-left: -50px;
+  }
+  .tv-label {
+    font-size: 56px;
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  .tv-button {
+    font-size: 32px !important;
+    height: 65px;
+    width: 65px;
+    margin-top: 15px;
+    padding-top: 10px !important;
+  }
+  .tv-button-selected {
+    font-size: 32px !important;
+    height: 65px;
+    width: 65px;
+    margin-top: 15px;
+    padding-top: 10px !important;
+  }
+  .stream-list-box {
+    height: 425px;
+  }
+  .stream-item {
+    height: 115px;
+  }
+  .logo {
+    height: 115px;
+  }
+  .streamer-name {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+  .current-status {
+    font-size: 32px;
+    margin-left: 40px;
+  }
+  .description {
+    font-size: 18px;
+    margin-left: 40px;
+  }
+  i.viewers {
+    font-size: 24px;
+  }
+  i.views {
+    font-size: 24px;
+  }
+  i.mature {
+    font-size: 28px;
+  }
+  i.partner {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .outer-stream-box {
+    height: 500px;
+  }
+  .tv-control-bar {
+    height: 80px;
+    margin-left: 30px;
+  }
+  .speaker-object {
+    height: 75px;
+    width: 125px;
+    margin-left: -30px;
+  }
+  .tv-label {
+    font-size: 42px;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+  .tv-button {
+    font-size: 18px !important;
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    padding-top: 10px !important;
+    padding-left: 8px !important;
+  }
+  .tv-button-selected {
+    font-size: 18px !important;
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    padding-top: 10px !important;
+    padding-left: 8px !important;
+  }
+  .stream-list-box {
+    height: 375px;
+    padding-top: 10px;
+  }
+  .stream-item {
+    height: 100px;
+  }
+  .logo {
+    height: 100px;
+  }
+  .streamer-name {
+    font-size: 28px;
+  }
+  .current-status {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  i.viewers {
+    font-size: 18px;
+  }
+  i.views {
+    font-size: 18px;
+  }
+  i.mature {
+    font-size: 22px;
+  }
+  i.partner {
+    font-size: 22px;
+  }
+  i.tv-leg {
+    height: 70px;
+  }
+  .right-leg {
+    margin-left: 0px;
+  }
+  .footer {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+    text-shadow: 2px 2px 10px black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+  .btn-group.btn-group-lg {
+    display: flex;
+  }
+  .btn.btn {
+    font-family: 'Sacramento', cursive;
+    font-size: 22px;
+    box-shadow: inset 1px 1px 0px black;
+    flex: 1;
+  }
+  .stream-list-box-mobile {
+    background-color: #4B307B;
+    height: 360px;
+    width: auto;
+    border-radius: 25px;
+    box-shadow: inset 1px 1px 30px 1px black;
+    margin-top: 20px;
+    margin-right: auto;
+    padding-top: 10px;
+    overflow: auto;
+  }
+  .stream-item {
+    border-radius: 20px;
+    width: auto;
+    margin-left: -10px;
+  }
+  #result-list-mobile {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px;
+    list-style-type: none;
+  }
+  .logo {
+    border-radius: 20px;
+  }
+  .streamer-name {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: -35px;
+  }
+  .current-status {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: -35px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+  }
+  .description {
+    font-size: 10px;
+    margin-left: -35px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+  }
+  i.viewers {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+  i.viewers span {
+    margin-left: 2px;
+  }
+  i.views {
+    font-size: 14px;
+    margin-left: -30px;
+  }
+  i.views span {
+    margin-left: 2px;
+  }
+  i.mature {
+    font-size: 24px;
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  i.partner {
+    font-size: 24px;
+    text-align: right;
+    margin-left: -30px;
+  }
+  .footer {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .footer span {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}

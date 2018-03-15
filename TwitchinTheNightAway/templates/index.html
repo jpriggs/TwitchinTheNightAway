@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <title>Twitchin the Night Away</title>
+
+    </head>
+    
+    <body class="main-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 class="title">Twitchin the Night Away</h1>
+          </div>
+        </div>
+        <div class="row d-none d-sm-block">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="tv-antenna antenna-left"></div>
+            <div class="tv-antenna antenna-right"></div>
+            <div class="antenna-base"></div>
+          </div>
+        </div>
+        <div class="row d-sm-none">
+          <div class="col-xs-12 col-sm-12">
+            <div class="btn-group btn-group-lg" data-toggle="buttons">
+              <button type="button" class="btn btn-primary active" id="all-button-mobile">All</button>
+              <button type="button" class="btn btn-success" id="online-button-mobile">Online</button>
+              <button type="button" class="btn btn-danger" id="offline-button-mobile">Offline</button>
+            </div>
+          </div>
+        </div>
+        <div class="row d-sm-none">
+          <div class="col-xs-12 col-sm-12">
+            <div class="stream-list-box-mobile" id="stream-list-box-mobile">
+              <ul id="result-list-mobile"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="row d-none d-sm-block">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="outer-stream-box">
+              <div class="row tv-control-bar">
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                  <div class="speaker-object" id="speaker1"></div>
+                </div>
+                <div class="col-sm-1 offset-sm-2 col-md-1 offset-md-2 col-lg-1 offset-lg-2">
+                  <h1 class="tv-label"><a href="#" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Riggovision</a></h1>
+                </div>
+                <div class="col-sm-1 offset-sm-3 col-md-1 offset-md-3 col-lg-1 offset-lg-3">
+                  <div class="btn-group btn-group-lg">
+                    <button type="button" class="btn tv-button" id="all-button">All</button>
+                    <button type="button" class="btn tv-button" id="online-button">On</button>
+                    <button type="button" class="btn tv-button" id="offline-button">Off</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="stream-list-box" id="stream-list-box">
+                    <ul id="result-list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-none d-sm-block">
+          <div class="col-sm-1 offset-sm-2 col-md-1 offset-md-2 col-lg-1 offset-lg-2">
+            <div class="tv-leg left-leg"></div>
+          </div>
+          <div class="col-sm-1 offset-sm-8 col-md-1 offset-md-9 col-lg-1 offset-lg-9">
+            <div class="tv-leg right-leg"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="footer">
+              <p>Created by: <a href="https://github.com/jpriggs">Jason Rigdon</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
