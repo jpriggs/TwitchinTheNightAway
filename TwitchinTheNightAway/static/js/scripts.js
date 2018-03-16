@@ -97,8 +97,8 @@ function fetchApiData(channel) {
         currentWatching + '</span></i></div><div><i class="fa fa-eye views" title="Total Views"><span>' +
         totalViews + '</span></i></div><div>' +
         mature + '<span>' + partner + '</span></div></div></div></li>';
-      $("#result-list").hide().append(html).fadeIn();
-      $("#result-list-mobile").hide().append(html).fadeIn();
+      $("#result-list").hide().append(html).fadeIn(500);
+      $("#result-list-mobile").hide().append(html).fadeIn(500);
     });
   });
 }
