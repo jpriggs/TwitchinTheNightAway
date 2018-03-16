@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
   changeButtonSelection("all-button");
-  $("#result-list").hide();
-  $("#result-list-mobile").hide();
+  $("#result-list, #result-list-mobile").hide();
   getStreamerData();
   if ($(window).width() > 576) {
-    $("#result-list").fadeIn();
+    $("#result-list").show("slow");
   }
   else {
-    $("#result-list-mobile").fadeIn();
+    $("#result-list-mobile").show("slow");
   }
 
   $("#all-button, #online-button, #offline-button").on("click", function() {
@@ -20,17 +19,15 @@ $(document).ready(function() {
         $(this).empty();
       });
       getStreamerData();
-      $("#result-list").fadeIn();
+      $("#result-list").show("slow");
     }
     else if (this.id == "online-button") {
-      $(".offline").hide();
-      $(".online").hide();
+      $(".offline, .online").hide();
       $(".online").delay(250).fadeIn(500);
     }
     else if (this.id == "offline-button") {
-      $(".online").hide();
-      $(".offline").hide();
-      $(".offline").delay(250).fadeIn();
+      $(".online, .offline").hide();
+      $(".offline").delay(250).fadeIn(500);
     }
   });
   $("#all-button-mobile, #online-button-mobile, #offline-button-mobile").on("click", function() {
@@ -39,16 +36,14 @@ $(document).ready(function() {
         $(this).empty();
       });
       getStreamerData();
-      $("#result-list-mobile").fadeIn(500);
+      $("#result-list-mobile").show("slow");
     }
     else if (this.id == "online-button-mobile") {
-      $(".offline").hide();
-      $(".online").hide();
+      $(".offline, .online").hide();
       $(".online").delay(250).fadeIn(500);
     }
     else if (this.id == "offline-button-mobile") {
-      $(".online").hide();
-      $(".offline").hide();
+      $(".online, .offline").hide();
       $(".offline").delay(250).fadeIn(500);
     }
   });
