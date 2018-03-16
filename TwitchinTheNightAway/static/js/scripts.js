@@ -9,38 +9,38 @@ $(document).ready(function() {
     changeButtonSelection(currentButton);
 
     if (this.id == "all-button") {
-      $("#result-list").delay(500).fadeOut(250, function() {
+      $("#result-list").fadeOut(function() {
         $(this).empty();
       });
       getStreamerData();
     }
     else if (this.id == "online-button") {
-      $(".offline").delay(500).fadeOut(250);
-      $(".online").delay(500).fadeOut(250);
-      $(".online").delay(500).fadeIn(500);
+      $(".offline").hide();
+      $(".online").hide();
+      $(".online").delay(250).fadeIn(500);
     }
     else if (this.id == "offline-button") {
-      $(".online").delay(500).fadeOut(250);
-      $(".offline").delay(500).fadeOut(250);
-      $(".offline").delay(500).fadeIn(500);
+      $(".online").hide();
+      $(".offline").hide();
+      $(".offline").delay(250).fadeIn(500);
     }
   });
   $("#all-button-mobile, #online-button-mobile, #offline-button-mobile").on("click", function() {
     if (this.id == "all-button-mobile") {
-      $("#result-list-mobile").delay(700).fadeOut(300, function() {
+      $("#result-list-mobile").fadeOut(function() {
         $(this).empty();
       });
       getStreamerData();
     }
     else if (this.id == "online-button-mobile") {
-      $(".offline").delay(700).fadeOut(300);
-      $(".online").delay(700).fadeOut(300);
-      $(".online").delay(700).fadeIn(300);
+      $(".offline").hide();
+      $(".online").hide();
+      $(".online").delay(250).fadeIn(500);
     }
     else if (this.id == "offline-button-mobile") {
-      $(".online").delay(700).fadeOut(300);
-      $(".offline").delay(700).fadeOut(300);
-      $(".offline").delay(700).fadeIn(300);
+      $(".online").hide();
+      $(".offline").hide();
+      $(".offline").delay(250).fadeIn(500);
     }
   });
   $("#stream-list-box").on("click", "li", function() {

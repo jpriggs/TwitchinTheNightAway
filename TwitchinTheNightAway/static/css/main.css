@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oregano');
 @import url('https://fonts.googleapis.com/css?family=Life+Savers');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-
 .main-body {
   background-color: #4b307b;
 }
@@ -640,10 +639,11 @@ from {
   .stream-list-box-mobile {
     background-color: #4B307B;
     height: 360px;
-    width: auto;
+    width: 100%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 30px 1px black;
     margin-top: 20px;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     overflow: auto;
@@ -651,12 +651,13 @@ from {
   .stream-item {
     border-radius: 20px;
     width: auto;
-    margin-left: -10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #result-list-mobile {
-    width: 90%;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
     list-style-type: none;
   }
