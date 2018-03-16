@@ -640,6 +640,7 @@ from {
     background-color: #4B307B;
     height: 360px;
     width: 100%;
+    max-width: 100%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 30px 1px black;
     margin-top: 20px;
@@ -647,6 +648,7 @@ from {
     margin-right: auto;
     padding-top: 10px;
     overflow: auto;
+    overflow-x: hidden;
   }
   .stream-item {
     border-radius: 20px;
