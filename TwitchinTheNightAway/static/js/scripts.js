@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   changeButtonSelection("all-button");
   getStreamerData();
-  $("#result-list").show();
 
   $("#all-button, #online-button, #offline-button").on("click", function() {
     var currentButton = $(this).attr("id");
@@ -97,8 +96,13 @@ function fetchApiData(channel) {
         currentWatching + '</span></i></div><div><i class="fa fa-eye views" title="Total Views"><span>' +
         totalViews + '</span></i></div><div>' +
         mature + '<span>' + partner + '</span></div></div></div></li>';
-      $("#result-list").hide().append(html).fadeIn(500);
-      $("#result-list-mobile").hide().append(html).fadeIn(500);
+
+      if ($(window).width() > 576) {
+        $("#result-list").hide().append(html).fadeIn();
+      }
+      else {
+        $("#result-list-mobile").hide().append(html).fadeIn();
+      }
     });
   });
 }
