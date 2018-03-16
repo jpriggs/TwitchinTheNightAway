@@ -1,7 +1,15 @@
 $(document).ready(function() {
 
   changeButtonSelection("all-button");
+  $("#result-list").hide();
+  $("#result-list-mobile").hide();
   getStreamerData();
+  if ($(window).width() > 576) {
+    $("#result-list").fadeIn();
+  }
+  else {
+    $("#result-list-mobile").fadeIn();
+  }
 
   $("#all-button, #online-button, #offline-button").on("click", function() {
     var currentButton = $(this).attr("id");
@@ -12,6 +20,7 @@ $(document).ready(function() {
         $(this).empty();
       });
       getStreamerData();
+      $("#result-list").fadeIn();
     }
     else if (this.id == "online-button") {
       $(".offline").hide();
@@ -21,7 +30,7 @@ $(document).ready(function() {
     else if (this.id == "offline-button") {
       $(".online").hide();
       $(".offline").hide();
-      $(".offline").delay(250).fadeIn(500);
+      $(".offline").delay(250).fadeIn();
     }
   });
   $("#all-button-mobile, #online-button-mobile, #offline-button-mobile").on("click", function() {
@@ -30,6 +39,7 @@ $(document).ready(function() {
         $(this).empty();
       });
       getStreamerData();
+      $("#result-list-mobile").fadeIn(500);
     }
     else if (this.id == "online-button-mobile") {
       $(".offline").hide();
@@ -98,10 +108,10 @@ function fetchApiData(channel) {
         mature + '<span>' + partner + '</span></div></div></div></li>';
 
       if ($(window).width() > 576) {
-        $("#result-list").hide().append(html).fadeIn();
+        $("#result-list").append(html);
       }
       else {
-        $("#result-list-mobile").hide().append(html).fadeIn();
+        $("#result-list-mobile").append(html);
       }
     });
   });
