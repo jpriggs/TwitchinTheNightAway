@@ -22,12 +22,12 @@ $(document).ready(function() {
       $("#result-list").show("slow");
     }
     else if (this.id == "online-button") {
-      $(".offline, .online").hide();
-      $(".online").delay(250).fadeIn(500);
+      $(".offline").hide();
+      $(".online").show();
     }
     else if (this.id == "offline-button") {
-      $(".online, .offline").hide();
-      $(".offline").delay(250).fadeIn(500);
+      $(".online").hide();
+      $(".offline").show();
     }
   });
   $("#all-button-mobile, #online-button-mobile, #offline-button-mobile").on("click", function() {
