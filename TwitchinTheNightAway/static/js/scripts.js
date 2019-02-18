@@ -19,7 +19,7 @@ $(document).ready(function() {
       $("#offline-button").prop("disabled", true).css("-webkit-filter", "grayscale(100%)");
       $("#offline-button-mobile").prop("disabled", true).css("-webkit-filter", "grayscale(100%)");
       getStreamerData();
-      //$("#result-list").fadeIn(250);
+
     }
     else if (this.id == "online-button") {
       $(".offline").hide();
@@ -60,7 +60,7 @@ $(document).ready(function() {
 async function getStreamerData() {
   //var streamers = ["ninja", "summit1g", "riotgames", "shroud", "imaqtpie", "nightblue3", "lirik", "maximilian_DOOD", "nl_kripp", "YoDa", "zizaran", "BobRoss", "TheSpeedGamers", "Asmongold", "freecodecamp", "Omgitsfirefoxx", "KindaFunnyGames", "ManvsGame", "Trihex", "dizzy", "Amaz", "AdamKoebel", "pianoimproman", "DomesticDan", "Bennyfits", "darbian", "A_Seagull", "daigothebeastv", "KayPikeFashion", , "gamesdonequick"];
   var streamers = ["ninja", "summit1g", "riotgames", "shroud", "nl_kripp", "YoDa", "zizaran", "BobRoss", "freecodecamp", "gamesdonequick"];
-  var apiType = ["streams", "users", "games"];
+  var apiType = ["users", "streams", "games"];
   let url, response, streamObj, gameObj, userObj;
   let liArray = [];
   let startIndex;
@@ -69,7 +69,6 @@ async function getStreamerData() {
   //Iterate though each streamer getting 3 API routes per streamer
   for(const streamer of streamers) {
       for(const type of apiType) {
-
           //Get data based on username or by game_id for the "games" api route
           if(type === "games") {
               //If user isn't streaming game_id can't be used to get the game API data
@@ -78,12 +77,13 @@ async function getStreamerData() {
               }
               else {
                   url = await generateApiUrl(type, streamObj.data[0].game_id);
+                  response = await sendApiRequest(url);
               }
           }
           else {
               url = await generateApiUrl(type, streamer);
+              response = await sendApiRequest(url);
           }
-          response = await sendApiRequest(url);
 
           //Store each API's data to a different variable
           if(type === 'streams') {

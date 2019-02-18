@@ -207,6 +207,7 @@
   padding-left: 30px;
   border-radius: 60px;
   overflow: auto;
+  scrollbar-width: none;
 }
 #result-list {
   padding: 0;
