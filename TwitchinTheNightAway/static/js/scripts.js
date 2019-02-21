@@ -102,17 +102,18 @@ async function getStreamerData() {
       liArray.push(html);
 
       //Add 5 elements to the dom every 5 iterations
-      if(liArray.length % 5 === 0) {
+      /*if(liArray.length % 5 === 0) {
           arrSize = liArray.length;
           startIndex = ((arrSize / 5) * 5) - 5;
           addHtmlToDom(startIndex, liArray);
-      }
+      }*/
   }
+  addHtmlToDom(0, liArray);
   //If the remaining elements are less than 5, add them
-  if(liArray.length !== arrSize) {
+  /*if(liArray.length !== arrSize) {
       let finalStartIndex = liArray.length - (liArray.length % 5);
       addHtmlToDom(finalStartIndex, liArray);
-  }
+  }*/
 
   //Enable buttons after loading
   $("#all-button").prop("disabled", false).css("-webkit-filter", "grayscale(0%)");
